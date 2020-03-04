@@ -1,2 +1,2 @@
-# freemoney.github.io
+# freemoney
 GitHub Pages
