@@ -1,25 +1,48 @@
 <html>
 <head>
 <title>You will be Redirected in... 6 seconds.</title><center>
-<meta http-equiv="refresh" content="6; url=http://tiberiugrabany.com/Bonuses/PassiveIncome">
-<!-- This page was created using The PCman Website Redirect Page Creator.
-This is a free service provided you leave this copyright notice intact!
-Your source for fun, free games, web tools and freeware.
-Visit us at https://www.thepcmanwebsite.com Copyright 2019 -->
-</head>
-<span style="font-family:arial; color:#black; font-size:18px"></span><br>
-<span style="font-family:arial; color:"black"; font-size:22px">Passive Income For You</span><br><br>
-<img src="http://tiberiugrabany.com/AffiliateOffers/GetCash.jpg" text="#FFFFFF" link="#0000FF" vlink="#0000FF"><br><br><b><span style="font-style:italic"><b>You will be redirected in 6 seconds!</b><br>If the redirection doesn't work please click <a href="http://tiberiugrabany.com/Bonuses/PassiveIncome">Here</a>.</span></b>
-</span>
-<p>&nbsp;</p>
-<div align="center">
+<div id="player"></div>
 
-<span style="font-family:arial; color:#black">
+<script src="http://www.youtube.com/player_api"></script>
 
-<br>
+<script>
+    
+    // create youtube player
+    var player;
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'm1zDAyPykp0',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+    }
 
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div></center>
-</body>
+    // autoplay video
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    // when video ends
+    function onPlayerStateChange(event) {        
+        if(event.data === 0) {
+// load a new page
+window.location = 'https://gramfree.world/?r=199867';
+}
+};
+function addListeners() {
+if (player) { player.addModelListener("STATE", "stateMonitor"); } 
+else { setTimeout("addListeners()",100); }
+}
+var s1 = new SWFObject('player.swf','ply','470','320','9','#ffffff');
+s1.addParam('allowfullscreen','false');
+s1.addParam('allowscriptaccess','always');
+s1.addParam('flashvars','file=http://uk.youtube.com/watchm1zDAyPykp0&autostart=true');
+s1.write('mediaspace');
+  </script>
+
+</head><body></body>
 </html>
